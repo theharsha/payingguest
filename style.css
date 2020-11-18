@@ -1,0 +1,246 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+
+body {
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: lighter;
+}
+
+header {
+      width: 100%;
+      height: 100vh;
+      background: url(header.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.banner_shadow {
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav.black ul {
+      background: #000;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+.line{
+      height: 2px;
+      background-color: black;
+}
+
+/** <<---------------About us------------------------>*/
+
+.about_us{
+      display: flex;
+}
+.aboutus_info{
+      flex: 0.6;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+}
+.aboutus_info>h1{
+      text-align: center;
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: 600;
+      font-size: 30px;
+}
+.aboutus_info>p{
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      padding-left: 50px;
+      padding-right: 50px;
+}
+.aboutus_img{
+      flex:0.4;
+}
+.aboutus_img>img{
+      height: 500px;
+      object-fit: contain;
+      padding: 20px;
+      border-radius: 5px;
+}
+
+/**<<_------------------rooms------------------------>>**/
+
+.room_section{
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+}
+.room_section>img{
+      height: 300px;
+      object-fit: contain;
+      border-radius: 15px;
+}
+.room_section>p{
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+}
+.rooms{
+      display: flex;
+      justify-content: center;
+}
+
+.Rooms{
+      padding-top: 50px;
+      text-align: center;
+}
+
+/*<<---------------------Gallery------------------->>*/
+.gallery{
+      display: flex;
+      flex-direction: column;
+}
+.gallery>h1{
+      padding: 15px;
+      text-align: center;
+}
+.gallery_one{
+      display: flex;
+      justify-content: space-evenly;
+}
+.gallery_one>img{
+      width: 350px;
+      height: 300px;
+      padding: 15px;
+      border-radius: 20px !important;
+}
+
+
+
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
+
+      /* <<<----------------About us--------------------------->>*/
+      .about_us{
+            display: flex;
+            flex-direction: column;
+      }
+      .aboutus_img{
+            display: flex;
+            justify-content: center;
+      }
+      .aboutus_img>img{
+            height: 350px;
+            object-fit: contain;
+            
+      }
+
+      /**<<<<<<---------------Room------------------->**/
+      .rooms{
+            display: flex;
+            flex-direction: column;
+      }
+      .room_section{
+            padding: 0px;
+      }
+
+      /**<<<<<<<<<-----------gallery------------>>>**/
+
+      .gallery_one{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+      }
+      .gallery_one>img{
+            width: 250px;
+            height: 200px;
+            padding: 15px;
+            border-radius: 20px !important;
+      }
+}
